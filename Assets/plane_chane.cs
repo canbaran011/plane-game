@@ -10,6 +10,13 @@ public class plane_chane : MonoBehaviour
     public GameObject planeFour;
     public GameObject planeFive;
 
+    public GameObject mainCamera;
+    public GameObject leftCamera;
+    public GameObject rightCamera;
+    public GameObject frontCamera;
+
+
+
     public GameObject panel;
     // Start is called before the first frame update
 
@@ -59,9 +66,39 @@ public class plane_chane : MonoBehaviour
         panel.SetActive(false);
     }
 
+    public void leftCamera_Button(){
+        mainCamera.SetActive(false);
+        leftCamera.SetActive(true);
+        rightCamera.SetActive(false);
+        frontCamera.SetActive(false);
+    }
+        public void rightCamera_Button(){
+        mainCamera.SetActive(false);
+        leftCamera.SetActive(false);
+        rightCamera.SetActive(true);
+        frontCamera.SetActive(false);
+    }
+        public void frontCamera_Button(){
+        mainCamera.SetActive(false);
+        leftCamera.SetActive(false);
+        rightCamera.SetActive(false);
+        frontCamera.SetActive(true);
+    }
+        public void mainCamera_Button(){
+        mainCamera.SetActive(true);
+        leftCamera.SetActive(false);
+        rightCamera.SetActive(false);
+        frontCamera.SetActive(false);
+    }
+
 
     void Start()
     {
+        mainCamera.SetActive(true);
+        leftCamera.SetActive(false);
+        rightCamera.SetActive(false);
+        frontCamera.SetActive(false);
+
         planeOne.SetActive(false);
         planeTwo.SetActive(false);
         planeThree.SetActive(false);
