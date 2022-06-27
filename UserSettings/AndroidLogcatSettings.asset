@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "R58N535208W",
         "name": "com.DefaultCompany.planegame",
-        "processId": 6966,
+        "processId": 16377,
         "exited": false
     },
     "m_SelectedPriority": 0,
@@ -12,6 +12,12 @@
             "deviceId": "R58N535208W",
             "name": "com.DefaultCompany.planegame",
             "processId": 6966,
+            "exited": false
+        },
+        {
+            "deviceId": "R58N535208W",
+            "name": "com.DefaultCompany.planegame",
+            "processId": 16377,
             "exited": false
         }
     ],
